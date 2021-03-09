@@ -1,0 +1,60 @@
+[
+    {
+        "id":"stel-cytima",
+        "name":"Stel Cytima",
+        "featured": false,
+        "featuredText": "",
+        "showcaseImage": "background.png",
+        "hasLogo": true,
+        "content": [
+            {
+                "image": "race1.jpg",
+                "title": "Résumé du projet",
+                "text": [
+                    "Stel Cytima est un jeu conçu dans le cadre d'un cours collégial.",
+                    "Il s'agit d'un jeu de course orienté action où le joueur est amené à participer à différetes courses contre des opposants contrôlés par l'ordinateur.",
+                    "Il existe divers arragements d'armes et véhicules pour différentes préférences de jeu",
+                    "Puisqu'il s'agit d'un jeu futuristique, les véhicules ne possèdent pas de roues mais lévitent au-dessus du sol!"
+                ],
+                "style": "align-right"
+            },
+            {
+                "image": "promo.png",
+                "title": "Mon rôle",
+                "text": [
+                    "Pour ce projet, mes tâches principales ont été d'écrire le code concernant la physique et le contrôle des véhicules, l'intelligence artificielle des opposants ainsi que la création de mon propre véhicule.",
+                    "Chaque véhicule possède quatre propulseurs qui lui permettent de rester stable. Plus un véhicule va vite, plus il gagne en force d'appui, lui permettant de monter des surfaces à grand angle.",
+                    "L'intelligence artificielle demande au véhicule de se dirigier vers un point à quelques mètres plus loin sur la piste. Plus le véhicule va vite, plus l'IA doit compenser en choisissant un point plus éloigné."
+                ],
+                "style": "align-left"
+            }
+        ]
+    },
+    {
+        "id":"alexis-draveur",
+        "name":"Alexis le draveur",
+        "featured": false,
+        "featuredText": "",
+        "showcaseImage": "",
+        "hasLogo": false,
+        "content": []
+    },
+    {
+        "id":"croisade-prestation",
+        "name":"Croisade à la prestation",
+        "featured": false,
+        "featuredText": "",
+        "showcaseImage": "",
+        "hasLogo": false,
+        "content": []
+    },
+    {
+        "id":"mirror",
+        "name":"Mirror",
+        "featured": true,
+        "featuredText": "Projet de recherche",
+        "showcaseImage": "",
+        "hasLogo": false,
+        "content": []
+    }
+]

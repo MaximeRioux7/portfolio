@@ -1,0 +1,83 @@
+$front-page-margin: 200px;
+
+.FrontPage{
+    background-image: url('../images/stars-background-v2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-color: rgba(#000, 0.5);
+    background-blend-mode: multiply;*/
+
+    padding-top: 88px;
+    padding-bottom: 60px;
+    
+    .featured{
+        margin-top: $front-page-margin;
+        display: flex;
+        justify-content: center;
+        > * {
+            flex: 0 0 50%;
+            max-width: 315px;
+            margin: 0 auto;
+        }
+    }
+
+    .bio{
+        .key-words{
+            margin-bottom: 10px;
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 700;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            > *:not(:first-child){
+                margin-left: 15px;
+            }
+        }
+        .desc{
+            margin-bottom: 10px;
+            line-height: 140%;
+        }
+    }
+
+    .projects-pointer{
+        text-align: center;
+        margin-top: $front-page-margin;
+
+        .arrow-icon{
+            margin-top: -30px;
+            font-size: 120px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .FrontPage {
+        .featured{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            > *{
+                flex: 0 0 100%;
+            }
+            > *:not(:first-child) {
+                display: none;
+            }
+        }
+
+        .bio{
+            .bio-title{
+                text-align: center;
+            }
+            .key-words{
+                font-family: 'Roboto Mono', monospace;
+                font-weight: 700;
+                list-style-type: none;
+                display: flex;
+                justify-content: space-between;
+                > *:not(:first-child){
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.Projects{
+    background-image: url('../images/abstract-background-v2-blur.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .projects-list{
+        position: relative;
+        padding: 80px 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .Projects{
+        .projects-list{
+            padding: 30px 0;
+        }
+    }
+}

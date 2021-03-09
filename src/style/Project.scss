@@ -1,0 +1,124 @@
+.Project{
+    position: relative;
+    .project-header{
+        position: relative;
+        padding-top: 88px;
+        height: 640px;
+        overflow: hidden;
+        .project-showcase{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: auto;
+            height: auto;
+            min-width: 100vw;
+            min-height: 100vh;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            //mix-blend-mode: multiply;
+        }
+        &:after{
+            content: " ";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            z-index: 0;
+            opacity: 0.3;
+        }
+        
+        .project-identity{
+            z-index: 1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: 25px;
+            transform: translate(-50%, -50%);
+        }
+
+        .project-logo{
+            width: 500px;
+            height: auto;
+            pointer-events: none;
+        }
+
+        .project-title{
+            text-align: center;
+            font-size: 84px;
+            text-shadow: 0 0 5px rgba(#000, 0.5);
+        }
+    }
+
+    .portfolio-button{
+        margin: 30px;
+        position: fixed !important;
+        z-index: 5;
+        backdrop-filter: blur(15px);
+    }
+
+    .project-content{
+        padding-bottom: 40px;
+        .project-section{
+            position: relative;
+            z-index: 1;
+            border: 3px solid rgba(#FFF, 0.5);
+            padding: 10px;
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 960px;
+            min-height: 300px;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        .section-container{
+            background-color: #111;
+            z-index: -1;
+            position: relative;
+            overflow: hidden;
+            white-space: normal;
+            width: 100%;
+            min-height: 300px;
+        }
+
+        .section-image{
+            z-index: -1;
+            position: absolute;
+            height: 100%;
+            width: auto;
+
+            mask-image: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+            transform: translateX(-15%);
+        }
+
+        .section-title{
+            font-size: 36px;
+        }
+
+        .section-description{
+            position: relative;
+            padding: 15px;
+            margin-left: auto;
+            max-width: 400px;
+            &:before{
+                z-index: -1;
+                position: absolute;
+                content: " ";
+                right: 0;
+                top: 0;
+                width: 150%;
+                height: 100%;
+                background: linear-gradient(to left, rgba(#111,1) 0%, rgba(#111,0) 100%);
+            }
+        }
+
+        .section-text > *{
+            white-space: normal;
+            margin: 15px 0;
+            letter-spacing: 0.1px;
+        }
+    }
+}

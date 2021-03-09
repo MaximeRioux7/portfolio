@@ -1,4 +1,5 @@
 .App{
+    position: relative;
     $ease-out: cubic-bezier(.2,.61,.41,.84);
     $accent-color: #2affa2;
 
@@ -26,8 +27,8 @@
             left: 0;
             width: 0%;
             height: 100%;
-            mix-blend-mode: soft-light;
-            background-color: rgba($color, 1);
+            background-color: rgba($color, 0.5);
+            // mix-blend-mode: overlay;
             transition: 0.4s $ease-out;
             transition-property: width, background-color;
         }
@@ -40,7 +41,7 @@
 
         &:active{
             &:before{
-                background-color: rgba($color, 0.5);
+                background-color: rgba($color, 0.25);
             }
             color: rgba($color, 0.5);
             border-color: rgba($color, 0.5);
@@ -49,6 +50,17 @@
         &:focus{
             outline: none;
         }
+    }
+
+    // ====================================================
+    //                       ELEMENTS
+    // ====================================================
+
+    h1, h2{
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: 400;
+        font-size: 64px;
+        letter-spacing: 1px;
     }
 
     // ====================================================
@@ -61,5 +73,23 @@
 
     .portfolio-button-color{
         @include portfolio-button($accent-color);
+    }
+
+    .inline-bar{
+        content: " ";
+        display: inline-block;
+        height: 2px;
+        background-color: white;
+        vertical-align: middle;
+        transform: translateY(-1px);
+        margin: 0 15px;
+    }
+
+    .page-container{
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }

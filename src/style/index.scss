@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@400;600&family=Roboto+Mono:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@100;400;600&family=Roboto+Mono:wght@400;600&display=swap');
 
 // CSS Reset
-html, body, h1, h2, h3, h4, h5, h6, div, p{
+html, body, h1, h2, h3, h4, h5, h6, div, p, ul, ol{
     margin: 0;
     padding: 0;
 }
@@ -10,5 +10,20 @@ html, body, h1, h2, h3, h4, h5, h6, div, p{
 html{
     font-family: 'Raleway', sans-serif;
     color: #FFF;
+    scroll-behavior: smooth;
+}
+
+html, body{
     background-color: #333337;
+}
+
+a{
+    color: #FFF;
+    transition: color 0.1s;
+    &:hover{
+        color: #CCC;
+    }
+    &:active{
+        color: #BBB;
+    }
 }
