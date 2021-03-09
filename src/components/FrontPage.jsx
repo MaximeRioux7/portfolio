@@ -9,7 +9,7 @@ export default function FrontPage() {
 		<div className="FrontPage">
 			<div className="featured page-container">
 				<div className="bio">
-					<h2 className="bio-title">Je suis</h2>
+					<h1 className="bio-title">Je suis</h1>
 					<ul className="key-words">
 						<li>Passioné</li>
 						<li>Rigoureux</li>
