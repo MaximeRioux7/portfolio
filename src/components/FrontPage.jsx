@@ -18,7 +18,7 @@ export default function FrontPage() {
 					<p className="desc">
 						Fan du jeu et du web, j'adore apprendre, relever des défis, me surpasser et travailer sur des projets passionnants.
 					</p>
-					<button className="portfolio-button">Me contacter</button>
+					<a className="linkedIn" href="mailto:maxime.rioux7@gmail.com"><button className="portfolio-button">Me contacter</button></a>
 				</div>
 				<div className="portfolio-showcase">
 					<img src="" alt=""/>

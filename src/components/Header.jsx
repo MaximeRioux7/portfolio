@@ -1,5 +1,6 @@
 import '../style/Header.scss';
 import { Link } from 'react-router-dom';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 export default function Header() {
 	return (
@@ -11,7 +12,7 @@ export default function Header() {
 				<p>Maxime Rioux</p>
 			</div></Link>
 			<div className="contact">
-				<button className="portfolio-button">Me contacter</button>
+				<a className="linkedIn" target="blank" href="https://www.linkedin.com/in/maxime-rioux-a1322a1bb/"><LinkedInIcon fontSize="large" /></a><a href="mailto:maxime.rioux7@gmail.com">maxime.rioux7@gmail.com</a>
 			</div>
 		</div>
 	);
