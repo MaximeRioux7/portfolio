@@ -1,11 +1,11 @@
 import '../style/ProjectCard.scss';
-export default function Project({id, name, featured, featuredText}) {
+export default function Project({project}) {
 	return (
-		<div className={`ProjectCard${(featured?` featured`:``)}`}>
-			{featured && featuredText ? <span className="featured-text">{featuredText}</span> : ``}
+		<div className={`ProjectCard${(project.featured?` featured`:``)}`}>
+			{project.featured && project.featuredText ? <span className="featured-text">{project.featuredText}</span> : ``}
 			<div className="project-container">
-				<img className="project-background" src={`/images/projects/${id}-background.png`} alt="" />
-				<img className="project-logo" src={`/images/projects/${id}-logo.png`} alt="" />
+				{project.hasBackground ?<img className="project-background" src={`./images/projects/${project.id}-background.png`} alt="" /> : ``}
+				{project.hasLogo ? <img className="project-logo" src={`./images/projects/${project.id}-logo.png`} alt="" /> : ``}
 			</div>
 		</div>
 	);

@@ -21,7 +21,7 @@ export default function FrontPage() {
 					<a className="linkedIn" href="mailto:maxime.rioux7@gmail.com"><button className="portfolio-button">Me contacter</button></a>
 				</div>
 				<div className="portfolio-showcase">
-					<img src="" alt=""/>
+					<img src="" onError={null} alt=""/>
 				</div>
 			</div>
 			<div className="projects-pointer">

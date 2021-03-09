@@ -6,6 +6,7 @@
         "featuredText": "",
         "showcaseImage": "background.png",
         "hasLogo": true,
+        "hasBackground": true,
         "content": [
             {
                 "image": "race1.jpg",
@@ -37,6 +38,7 @@
         "featuredText": "",
         "showcaseImage": "render.png",
         "hasLogo": false,
+        "hasBackground": true,
         "content": [
             {
                 "image": "gameplay.png",
@@ -65,6 +67,7 @@
         "featuredText": "",
         "showcaseImage": "promo.png",
         "hasLogo": false,
+        "hasBackground": true,
         "content": [
             {
                 "image": "1.png",
@@ -92,6 +95,7 @@
         "featuredText": "Projet de recherche",
         "showcaseImage": "code.png",
         "hasLogo": true,
+        "hasBackground": false,
         "content": [
             {
                 "image": "",

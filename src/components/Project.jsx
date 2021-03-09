@@ -10,9 +10,9 @@ export default function Project(props) {
 	return (
 		<div className="Project">
             <div className="project-header">
-				<img className="project-showcase" src={`/images/projects/${id}-${project.showcaseImage}`} alt="" />
+				<img className="project-showcase" src={`./images/projects/${id}-${project.showcaseImage}`} onError={null} alt="" />
 				<div className="project-identity">
-					{(project.hasLogo ? <img className="project-logo" src={`/images/projects/${id}-logo.png`} alt="" /> : <h1 className="project-title">{project.name}</h1>)}
+					{(project.hasLogo ? <img className="project-logo" src={`./images/projects/${id}-logo.png`} onError={null} alt="" /> : <h1 className="project-title">{project.name}</h1>)}
 				</div>
 				<div className="page-container">
 					<Link to={`/`}>
@@ -24,7 +24,7 @@ export default function Project(props) {
 				{project.content.map((section, i) =>
 					<div key={i} className="project-section">
 						<div className="section-container">
-							<img className="section-image" src={`/images/projects/${id}-${section.image}`} alt="" />
+							<img className="section-image" src={`./images/projects/${id}-${section.image}`} onError={null} alt="" />
 							<div className="section-description">
 								<h2 className="section-title">{section.title}</h2>
 								<div className="section-text">
