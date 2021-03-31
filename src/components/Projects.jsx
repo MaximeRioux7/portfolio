@@ -3,7 +3,7 @@ import projects from '../data/projects.json';
 import ProjectCard from './ProjectCard';
 
 // Maximum projects count
-if(projects.length > 4) projects.length = 4;
+// if(projects.length > 4) projects.length = 4;
 
 export default function Projects() {
 	return (

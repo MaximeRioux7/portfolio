@@ -4,7 +4,7 @@
         "name":"Mirror",
         "featured": true,
         "featuredText": "Projet de recherche",
-        "showcaseImage": "code.png",
+        "showcaseImage": "code.jpg",
         "hasLogo": true,
         "hasBackground": false,
         "content": [
@@ -18,14 +18,14 @@
                 "style": "full-text"
             },
             {
-                "image": "",
+                "image": "1.jpg",
                 "title": "Autorité",
                 "text": [
                     "« L’autorité » est le concept de laisser soit le client ou le serveur avoir le contrôle sur certains objets.",
                     "Par exemple, un client qui possède l'autorité sur un personnage pourrait changer ses valeurs directement sans passer par le serveur.",
                     "Au contraire, dans le cas où le serveur possède l'autorité, tout changement local par un client ne se réflètera pas sur le serveur. Il est toutefois posside au client de faire des requêtes au serveur."
                 ],
-                "style": "full-text"
+                "style": "align-left"
             },
             {
                 "image": "",
@@ -37,14 +37,14 @@
                 "style": "full-text"
             },
             {
-                "image": "",
+                "image": "2.jpg",
                 "title": "Problèmes potentiels",
                 "text": [
                     "Donner l'autorité au serveur est considérée la méthode préférable car cela crée un couche de sécurité cruciale.",
                     "Cependant, un client devant d'abord envoyer une requête au serveur pour effectuer le mouvement d'un personnage peut s'avérer problématique pour les jeux à temps réel.",
                     "C'est un grave problème de latence qui rend alors le jeu presque injouable."
                 ],
-                "style": "full-text"
+                "style": "align-left"
             },
             {
                 "image": "",
@@ -52,7 +52,7 @@
                 "text": [
                     "La \"prédiction\" côté-client et la \"réconciliation\" deviennent alors deux fonctionnalités impératives.",
                     "La première permet au client de prédire la réponse du serveur. En pratique, le client envoie sa requête en même temps que d'effectuer le changement par lui-même. Une fois la réponse du serveur reçue, il corrige ses valeurs au besoin.",
-                    "La réconciliation permet une meilleure synchronisation après le décalage temporel "
+                    "La réconciliation permet une meilleure synchronisation après le décalage temporel entre prédiction et l'arrivée de la réponse du serveur en tenant compte du temps auquel chaque envoi et réponse se fait."
                 ],
                 "style": "full-text"
             }
@@ -63,7 +63,7 @@
         "name":"Stel Cytima",
         "featured": false,
         "featuredText": "",
-        "showcaseImage": "background.png",
+        "showcaseImage": "background.jpg",
         "hasLogo": true,
         "hasBackground": true,
         "content": [
@@ -79,7 +79,7 @@
                 "style": "align-right"
             },
             {
-                "image": "promo.png",
+                "image": "promo.jpg",
                 "title": "Mon rôle",
                 "text": [
                     "Pour ce projet, mes tâches principales ont été d'écrire le code concernant la physique et le contrôle des véhicules, l'intelligence artificielle des opposants ainsi que la création de mon propre véhicule.",
@@ -95,12 +95,12 @@
         "name":"Alexis le draveur",
         "featured": false,
         "featuredText": "",
-        "showcaseImage": "render.png",
+        "showcaseImage": "render.jpg",
         "hasLogo": false,
         "hasBackground": true,
         "content": [
             {
-                "image": "gameplay.png",
+                "image": "gameplay.jpg",
                 "title": "Résumé du projet",
                 "text": [
                     "Voici Alexis le draveur un jeu créé en équipe dans un délai de deux jours pour l'Intercollégial de création de jeu du Collège de Valleyfield, édition 2020, gagnant en première place.",
@@ -109,7 +109,7 @@
                 "style": "align-right"
             },
             {
-                "image": "render.png",
+                "image": "render.jpg",
                 "title": "Mes tâches",
                 "text": [
                     "Dans ce projet, mes réalisations sont surtout des modèles 3D ainsi que quelques rares bouts de programmation.",
@@ -124,12 +124,12 @@
         "name":"Croisade à la prestation",
         "featured": false,
         "featuredText": "",
-        "showcaseImage": "promo.png",
+        "showcaseImage": "promo.jpg",
         "hasLogo": false,
         "hasBackground": true,
         "content": [
             {
-                "image": "1.png",
+                "image": "1.jpg",
                 "title": "Résumé du projet",
                 "text": [
                     "Voici un jeu réalisé en équipe de quatre pour l'intercollégial de création de jeu du Collège de Valleyfield, édition 2021.",
@@ -138,10 +138,39 @@
                 "style": "align-right"
             },
             {
-                "image": "2.png",
+                "image": "2.jpg",
                 "title": "Mes tâches",
                 "text": [
                     "Pour ce jeu créé en moins de 48 heures, mes tâches principales était d'aider à la conception du jeu et de son gameplay, le choix d'un style graphique et finalement, la modélisation de plusieurs tuiles de terrain et de bâtiments qui sont ajoutées aléatoirement et dynamiquement dans une partie. Finalement, j'ai aussi fait la création de la plupart des objets interactifs et leur intégration."
+                ],
+                "style": "align-left"
+            }
+        ]
+    },
+    {
+        "id":"3d",
+        "name":"Créations 3D",
+        "featured": false,
+        "featuredText": "",
+        "showcaseImage": "ring2.jpg",
+        "hasLogo": true,
+        "hasBackground": true,
+        "content": [
+            {
+                "image": "background.jpg",
+                "title": "Test de matériaux ",
+                "text": [
+                    "Ceci est une simple sphère créée dans le but de tester différentes configurations de matériaux.",
+                    "Chacun des matériaux présents sont un mixte de différents 'shaders' de Blender afin d'obtenir un résultat réaliste."
+                ],
+                "style": "align-right"
+            },
+            {
+                "image": "tiles.jpg",
+                "title": "Matériaux procéduraux",
+                "text": [
+                    "Le matériau de tuiles ci-contre a été complètement généré par Blender à l'aide de son fameux système de 'nodes'.",
+                    "En branchant différents types de textures précisément, on peut obtenir des résultats intéressants et éviter de devoir partir à la recherche de matériaux pendant plusieurs heures ou jours et de devoir les photographier."
                 ],
                 "style": "align-left"
             }
