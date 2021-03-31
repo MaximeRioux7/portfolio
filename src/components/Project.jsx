@@ -22,9 +22,11 @@ export default function Project(props) {
 			</div>
 			<div className="project-content">
 				{project.content.map((section, i) =>
-					<div key={i} className="project-section">
+					<div key={i} className={"project-section " + section.style}>
 						<div className="section-container">
-							<img className="section-image" src={`./images/projects/${id}-${section.image}`} onError={null} alt="" />
+							{(section.image? 
+								<img className="section-image" src={`./images/projects/${id}-${section.image}`} onError={null} alt="" />: ""
+							)}
 							<div className="section-description">
 								<h2 className="section-title">{section.title}</h2>
 								<div className="section-text">

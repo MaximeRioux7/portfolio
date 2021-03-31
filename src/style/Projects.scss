@@ -9,6 +9,15 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+
+        > li{
+
+            > *{
+                padding: 0;
+                display: block;
+                margin: 10px;
+            }
+        }
     }
 }
 

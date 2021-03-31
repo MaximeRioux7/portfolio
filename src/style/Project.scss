@@ -39,15 +39,26 @@
         }
 
         .project-logo{
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             width: 500px;
             height: auto;
             pointer-events: none;
+            margin: 0 auto;
+            transition: width 0.3s, height 0.3s, transform 0.3s;
         }
 
         .project-title{
+            backdrop-filter: blur(10px);
+            border: 4px solid white;
+            padding: 30px;
             text-align: center;
             font-size: 84px;
             text-shadow: 0 0 5px rgba(#000, 0.5);
+            transition: font-size 0.3s;
         }
     }
 
@@ -68,10 +79,27 @@
             box-sizing: border-box;
             width: 100%;
             max-width: 960px;
-            min-height: 300px;
+            min-height: 240px;
             overflow: hidden;
             margin: 0 auto;
             margin-bottom: 20px;
+
+            &.full-text{
+                .section-description{
+                    margin: 0 auto;
+                    position: relative;
+                    
+                    &:before{
+                        top: 50%;
+                        left: 50%;
+                        position: absolute;
+                        width: 100vw;
+                        transform: translate(-50%, -50%);
+                        margin: none;
+                        background: linear-gradient(to left, rgba(#7199d9, 0.15) 0%, rgba(#111,0) 40%, rgba(#111,0) 60%, rgba(#7199d9,0.15) 100%);
+                    }
+                }
+            }
         }
 
         .section-container{
@@ -81,7 +109,7 @@
             overflow: hidden;
             white-space: normal;
             width: 100%;
-            min-height: 300px;
+            min-height: 240px;
         }
 
         .section-image{
@@ -103,6 +131,7 @@
             padding: 15px;
             margin-left: auto;
             max-width: 400px;
+            min-height: 240px;
             &:before{
                 z-index: -1;
                 position: absolute;
@@ -119,6 +148,41 @@
             white-space: normal;
             margin: 15px 0;
             letter-spacing: 0.1px;
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .Project{
+        .project-header {
+            .project-identity{
+                width: 95%;
+            }
+
+            .project-title{
+                font-size: 64px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .Project{
+        .section-description{
+            backdrop-filter: blur(5px);
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .Project{
+        .project-header {
+            .project-title{
+                font-size: 56px;
+            }
+            .project-logo{
+                width: 400px;
+            }
         }
     }
 }

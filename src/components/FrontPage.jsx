@@ -4,6 +4,10 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 //import projects from '../data/projects.json';
 //const featuredProjects = projects.filter(projet => projet.featured);
 
+function scrollToProjects(){
+	document.getElementById(`Projects`).scrollIntoView();
+}
+
 export default function FrontPage() {
 	return (
 		<div className="FrontPage">
@@ -24,8 +28,8 @@ export default function FrontPage() {
 					<img src="" onError={null} alt=""/>
 				</div>
 			</div>
-			<div className="projects-pointer">
-				<h2 className="">Projets</h2>
+			<div className="projects-pointer" onClick={scrollToProjects}>
+				<h2 className="pointer-title">Projets</h2>
 				<KeyboardArrowDownIcon className="arrow-icon" />
 			</div>
 		</div>

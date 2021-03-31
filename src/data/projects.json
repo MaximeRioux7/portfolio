@@ -1,5 +1,64 @@
 [
     {
+        "id":"mirror",
+        "name":"Mirror",
+        "featured": true,
+        "featuredText": "Projet de recherche",
+        "showcaseImage": "code.png",
+        "hasLogo": true,
+        "hasBackground": false,
+        "content": [
+            {
+                "image": "",
+                "title": "Introduction",
+                "text": [
+                    "Mirror est un API réseau de haut niveau pour Unity. Open source, puissant et compatible avec la plupart des APIs de bas niveau, il est une excellente option pour les créateurs de jeux ayant besoin d'une communication client/serveur.",
+                    "Il a été créé sur les bases de Unet pour lui être une alternative directe et plus puissante pour les plus gros projets. Il est donc semblable au système maintenant obsolète qui était auparavent fourni avec Unity."
+                ],
+                "style": "full-text"
+            },
+            {
+                "image": "",
+                "title": "Autorité",
+                "text": [
+                    "« L’autorité » est le concept de laisser soit le client ou le serveur avoir le contrôle sur certains objets.",
+                    "Par exemple, un client qui possède l'autorité sur un personnage pourrait changer ses valeurs directement sans passer par le serveur.",
+                    "Au contraire, dans le cas où le serveur possède l'autorité, tout changement local par un client ne se réflètera pas sur le serveur. Il est toutefois posside au client de faire des requêtes au serveur."
+                ],
+                "style": "full-text"
+            },
+            {
+                "image": "",
+                "title": "SyncVar et Remote Actions",
+                "text": [
+                    "SyncVar est un attribut de Mirror permettant la synchronisation d’une variable du serveur vers les clients en utilisant un hook (fonction ne s’exécutant que sur les clients).",
+                    "Les « Remote Actions » ou actions distantes permettent quant à elles aux clients de communiquer au serveur (et vice-versa). Elle permettent l'envoi de commandes et peuvent aussi être utilisées pour la synchronisation client/serveur."
+                ],
+                "style": "full-text"
+            },
+            {
+                "image": "",
+                "title": "Problèmes potentiels",
+                "text": [
+                    "Donner l'autorité au serveur est considérée la méthode préférable car cela crée un couche de sécurité cruciale.",
+                    "Cependant, un client devant d'abord envoyer une requête au serveur pour effectuer le mouvement d'un personnage peut s'avérer problématique pour les jeux à temps réel.",
+                    "C'est un grave problème de latence qui rend alors le jeu presque injouable."
+                ],
+                "style": "full-text"
+            },
+            {
+                "image": "",
+                "title": "Solutions",
+                "text": [
+                    "La \"prédiction\" côté-client et la \"réconciliation\" deviennent alors deux fonctionnalités impératives.",
+                    "La première permet au client de prédire la réponse du serveur. En pratique, le client envoie sa requête en même temps que d'effectuer le changement par lui-même. Une fois la réponse du serveur reçue, il corrige ses valeurs au besoin.",
+                    "La réconciliation permet une meilleure synchronisation après le décalage temporel "
+                ],
+                "style": "full-text"
+            }
+        ]
+    },
+    {
         "id":"stel-cytima",
         "name":"Stel Cytima",
         "featured": false,
@@ -85,44 +144,6 @@
                     "Pour ce jeu créé en moins de 48 heures, mes tâches principales était d'aider à la conception du jeu et de son gameplay, le choix d'un style graphique et finalement, la modélisation de plusieurs tuiles de terrain et de bâtiments qui sont ajoutées aléatoirement et dynamiquement dans une partie. Finalement, j'ai aussi fait la création de la plupart des objets interactifs et leur intégration."
                 ],
                 "style": "align-left"
-            }
-        ]
-    },
-    {
-        "id":"mirror",
-        "name":"Mirror",
-        "featured": true,
-        "featuredText": "Projet de recherche",
-        "showcaseImage": "code.png",
-        "hasLogo": true,
-        "hasBackground": false,
-        "content": [
-            {
-                "image": "",
-                "title": "Introduction",
-                "text": [
-                    "Mirror est un API réseau de haut niveau pour Unity. Open source, puissant et compatible avec la plupart des APIs de bas niveau, il est une excellente option pour les créateurs de jeux ayant besoin d'une communication client/serveur.",
-                    "Il a été créé sur les bases de Unet pour lui être une alternative directe et plus puissante pour les plus gros projets. Il est donc semblable au système maintenant obsolète qui était auparavent fourni avec Unity."
-                ],
-                "style": "full-text"
-            },
-            {
-                "image": "",
-                "title": "Autorité",
-                "text": [
-                    "« L’autorité » est un concept qui s’applique à un client ou au serveur. Un client qui possède l’autorité peut, par exemple, déplacer par lui-même un personnage de manière locale, sans vérification par le serveur.",
-                    "Si le client n’a pas l’autorité, il faudra d’abord qu’il envoie une commande au serveur pour que celui-ci accomplisse la tâche. Par exemple, le client doit envoyer au serveur la commande de déplacer le personnage."
-                ],
-                "style": "full-text"
-            },
-            {
-                "image": "",
-                "title": "SyncVar et Remote Actions",
-                "text": [
-                    "SyncVar est un attribut de Mirror permettant la synchronisation d’une variable du serveur vers les clients en utilisant un hook (fonction ne s’exécutant que sur les clients).",
-                    "Les « Remote Actions » ou actions distantes permettent quant à elles aux clients de communiquer au serveur (et vice-versa). Elle permettent l'envoie de commandes et peuvent aussi être utilisées pour la synchronisation client/serveur."
-                ],
-                "style": "full-text"
             }
         ]
     }

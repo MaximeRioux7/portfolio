@@ -5,7 +5,6 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 export default function Header() {
 	return (
 		<div className="Header">
-			<span id="top" style={{display: `none`}}></span>
 			<Link to={`/`}><div className="logo-area">
 				<span className="text-logo">MR</span>
 				<span className="inline-bar" style={{width: '25px'}}></span>
